@@ -17,6 +17,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^1.0.4",
     "gulp-uglifyes": "^0.2.1",
-    "gulp-useref": "^3.1.6"
+    "gulp-useref": "^3.1.6",
+    "tar": "^4.4.8"
   }
 }
