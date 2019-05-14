@@ -1,0 +1,5 @@
+//1. Test siute: "cardsArray is defined and is not empty"
+//2. Test siute: "each element cardsArray has the name, imgUrl, price, longDescription, shortDescription, rating and id"
+//3. Test suite: "cart section is hidden by default"
+//4. Test suite: "clicking cartButton toggles cart visibility"
+//5. Test suite: "check asynchronous function"
