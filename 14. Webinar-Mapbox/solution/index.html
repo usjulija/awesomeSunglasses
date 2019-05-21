@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- mapbox -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet'/>
+  <!--endbuild-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Awesome Sunglasses</title>
+</head>
+<body>
+  <nav>
+    <button id="cartButton" aria-label="button toggling cart section visibility">
+      <i class="fa fa-shopping-cart"></i>
+      <span id="cartCounter">0</span>
+    </button>
+  </nav>
+  <section class="cartSection">
+    <h2>Your cart</h2>
+    <div id="cartGallery"></div>
+  </section>
+  <main class="container" id="gallery">
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Our awesome store location!</p>
+      <div id="map-menu">
+        <input type="radio" value="streets" id="streets-v11" checked="checked" name="rtoggle">
+        <label for="streets">streets</label>
+        <input type="radio" value="light" id="light-v10" name="rtoggle">
+        <label for="light">light</label>
+        <input type="radio" value="dark" id="dark-v10" name="rtoggle">
+        <label for="dark">dark</label>
+        <input type="radio" value="satellite" id="satellite-v9" name="rtoggle">
+        <label for="satellite">satellite</label>
+      </div>
+      <div id="mapContainer"></div>
+    </section>
+  </main>
+  <section id="modal">
+    <button id="closeModal" aria-label="close button"><i class="fa fa-close"></i></button>
+    <div class="modalContent">
+      <div class="left">
+        <img src="./images/beauty.jpg" alt="sunglasses" id="modalImg">
+        <p class="price" id="modalPrice">Price</p>
+      </div>
+      <div class="right">
+        <h2 class="name" id="modalName">Beauty</h2>
+        <p id="modalText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="option-colors-text">Please choose the color you like!</p>
+        <select class="option-colors" aria-label="color options for sunglasses">
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="silver">Silver</option>
+        </select>
+        <div class="social">
+          <button aria-label="share on Facebook"><i class="fa fa-facebook"></i></button>
+          <button aria-label="share on Insagram"><i class="fa fa-instagram"></i></button>
+          <button aria-label="share on Pinterest"><i class="fa fa-pinterest"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--build:js js/main.min.js-->
+  <script src="js/app.js"></script>
+  <!--endbuild-->
+</body>
+</html>
